@@ -27,7 +27,6 @@ body {
     justify-content: flex-end;
 }
 .landing-page-content-conainer {
-    /* border: 1px solid white; */
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -124,8 +123,8 @@ body {
     }
     .landing-page-bg-color {
         justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 1rem;
+        /* align-items: flex-end; */
+        /* padding-bottom: 3rem; */
     }
     .landing-page-content-conainer {
 
@@ -778,7 +777,7 @@ body {
     border-right: 1px solid rgb(51, 51, 51);
     border-left: 1px solid rgb(2, 131, 2);
     margin-right: 0.5rem;
-    transition: all 0.2s ease-in-out;
+    /*transition: all 0.2s ease-in-out;*/
 }
 .album-col:hover {
     background: rgb(54, 54, 54);
