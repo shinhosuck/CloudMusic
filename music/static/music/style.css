@@ -1334,6 +1334,7 @@ body {
 }
 .album-detail-album-title {
     color: rgb(3, 180, 3);
+    text-transform: capitalize;
     margin-bottom: 0 !important;
 }
 .album-detail-album-small {
