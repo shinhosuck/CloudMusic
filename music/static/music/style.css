@@ -11,7 +11,7 @@ body {
 
 /* LANDING_PAGE.HTML*/
 .landing-page-img {
-    min-height: 120vh;
+    min-height: 100vh;
     background: url("images/landing_page.jpg");
     background-position: center;
     background-size: cover;
@@ -20,7 +20,7 @@ body {
 }
 .landing-page-bg-color {
     background: rgba(0, 0, 0, 0.5);
-    min-height: 120vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items:center;
