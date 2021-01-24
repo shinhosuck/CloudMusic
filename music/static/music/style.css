@@ -39,7 +39,7 @@ body {
 }
 .landing-page-text-container{
    /* border: 1px solid white;*/
-    flex: 0 0 51%;
+    flex: 0 0 55%;
 }
 .landing-page-title {
     color: rgb(242, 242, 242);
@@ -51,15 +51,15 @@ body {
 .landing-page-para {
     color: rgb(242, 242, 242);
     text-align: center;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
     line-height: 1.5;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .landing-page-btns {
    /* border: 1px solid white;*/
     padding-top: 1.5rem;
-    flex: 0 0 51%;
+    flex: 0 0 55%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
