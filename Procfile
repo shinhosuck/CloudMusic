@@ -1,1 +1,1 @@
-web: gunicorn django_project.wsgi --workers=1 --timeout=25
+web: gunicorn django_project.wsgi

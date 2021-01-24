@@ -1,5 +1,5 @@
 {% load static %}
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9,24 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'music/style.css' %}">
-
     {% block title %}
     <title>Cloud Beat</title>
     {% endblock title %}
-
-    <style>
-        .success-message-container {
-            color: rgb(190, 190, 190);
-            text-align: center;
-            display: block;
-            line-height: normal;
-            font-size: 1.2rem;
-            padding: 1rem 0;
-        }
-        .success-message {
-            color: rgb(0, 190, 0);
-        }
-    </style>
   </head>
   <body>
     <header>
@@ -46,9 +31,9 @@
         </div>
         {% endblock image%}
         {% for message in messages %}
-
-            <small class="success-message-container">
-                <span class="success-message">Success!</span> {{ message }}
+            <small style="color: rgb(190, 190, 190); text-align: center; display: block; line-height: normal;
+                    font-size: 1.2rem; padding: 1rem 0;">
+                <span style="color: rgb(0, 190, 0);">Success!</span> {{ message }}
             </small>
         {% endfor %}
 
@@ -111,7 +96,7 @@
         </div>
         {% endblock footer %}
     </footer>
-        <script src="{% static 'music/main.js' %}"></script>
+    <script src="{% static 'music/main.js' %}"></script>
   </body>
 </html>
 

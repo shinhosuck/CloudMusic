@@ -21,14 +21,18 @@ body {
 .landing-page-bg-color {
     background: rgba(0, 0, 0, 0.5);
     min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: flex-end;
 }
 .landing-page-content-conainer {
-    min-height: 100vh;
+    /* border: 1px solid white; */
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    align-content: center;
+    flex: 0 0 100%;
 }
 .landing-page-text-container{
     flex: 0 0 51%;
@@ -120,6 +124,8 @@ body {
     }
     .landing-page-bg-color {
         justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 1rem;
     }
     .landing-page-content-conainer {
 
@@ -747,6 +753,7 @@ body {
 }
 .album-header-container {
     margin-bottom: 0.5rem;
+    /* padding-top: 2rem; */
 }
 .album-header {
     color: rgb(245, 245, 245);
@@ -840,9 +847,6 @@ body {
     .content-container {
         flex: 0 0 100%;
     }
-    .album-container {
-        overflow-x: scroll;
-    }
     .side-window-container {
         border: none;
         border-left: none;
@@ -858,7 +862,9 @@ body {
     }
     .side-window-header {
         letter-spacing: 0.1rem;
-        margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding: 0.4rem;
+        margin: 0 3rem;
         font-size: 1.8rem;
     }
     .side-window {
@@ -1329,7 +1335,6 @@ body {
 }
 .album-detail-album-title {
     color: rgb(3, 180, 3);
-    text-transform: capitalize;
     margin-bottom: 0 !important;
 }
 .album-detail-album-small {
@@ -1455,7 +1460,6 @@ body {
 }
 .album-detail-song-title {
     list-style-type: none;
-    text-transform: capitalize;
     flex: 1;
 }
 .song-tile-a-link {

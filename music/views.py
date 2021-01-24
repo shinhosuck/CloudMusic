@@ -119,13 +119,13 @@ def album_warning_message(request, pk):
 
 @login_required
 def create_song(request, pk):
-    user = request.user                
-    albums = user.album_set.all()       
-    album = Album.objects.get(pk=pk)   
+    user = request.user                 # request user
+    albums = user.album_set.all()       # get users albums
+    album = Album.objects.get(pk=pk)    # get the current album
     if album in albums:
         if request.method == 'POST':
             song_form = CreateSongForm(request.POST, request.FILES)
-            song_form.instance.album = album
+            song_form.instance.album = album # set it to the current album
             if song_form.is_valid():
                 song_form.save()
                 messages.success(request, f'User {request.user.username}, your song has been successfully added.')
