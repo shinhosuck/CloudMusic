@@ -1458,6 +1458,7 @@ body {
 }
 .album-detail-song-title {
     list-style-type: none;
+    text-transform: capitalize;
     flex: 1;
 }
 .song-tile-a-link {
