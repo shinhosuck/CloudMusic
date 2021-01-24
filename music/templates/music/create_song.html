@@ -50,7 +50,7 @@
     {% csrf_token %}
     <div class="create-song-form-row">
         <div class="create-song-form-col">
-            <h3 class="create-song-form-title">Add Song Form</h3>
+            <h3 class="create-song-form-title">Upload Song</h3>
             {{ song_form|crispy}}
             <button class='btn-add-song' type='submit'>Submit</button>
             <a class="song-form-cancel" href="{% url 'music:my_albums' user.pk %}" type="button">Cancel</a>
