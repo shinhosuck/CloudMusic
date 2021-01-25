@@ -787,7 +787,7 @@ body {
 }
 .album-col:hover {
     background: rgb(54, 54, 54);
-    position: relative;
+    /*position: relative;*/
 }
 .img-size {
     border-radius: 5px;
@@ -909,6 +909,14 @@ body {
         font-size: 3rem;
     }
 }
+/*@media screen and (max-width: 420px) {
+    .hide-btn {
+        display: block;
+    }
+    .side-window-hide-btn {
+        display: block;
+    }
+}*/
 /* END HOME.HTML */
 
 /* MY_ALBUMS.HTML */

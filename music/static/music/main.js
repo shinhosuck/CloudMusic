@@ -25,9 +25,10 @@ window.addEventListener("resize", function(){
 // HOME.HTML
 const containerItems = document.querySelectorAll(".container-items");
 const sideWindowPlayLink = document.querySelectorAll(".side-window-play-link")
+const playBtns = document.querySelectorAll(".play-btn")
 
 containerItems.forEach(function(item){
-	item.addEventListener("mouseenter", function(event){
+	item.addEventListener("mouseover", function(event){
 		const child_elements = event.currentTarget.children
 		for(i=0; i < child_elements.length; i++){
 			if(child_elements[i].classList.contains("hide-btn")){
@@ -48,6 +49,26 @@ containerItems.forEach(function(item){
 		}
 	})
 })
+// window.addEventListener("resize", function(){
+// 	playBtns.forEach( function(btn) {
+// 		if(window.innerWidth < 700) {
+// 			btn.classList.add("show-btn")
+// 			btn.classList.remove("hide-btn")
+// 			containerItems.forEach(function(item) {
+// 			item.removeEventListener("mouserover", this.item)
+// 			item.removeEventListener("mouseleave", this.item)
+// 		});
+// 		}
+// 		else if(window.innerWidth > 700) {
+// 			btn.classList.remove("show-btn")
+// 			btn.classList.add("hide-btn")
+// 			containerItems.forEach(function(item) {
+// 			item.removeEventListener("mouserover", this)
+// 			item.removeEventListener("mouseleave", this)
+// 		});
+// 		}
+// 	});
+// })
 // side window
 sideWindowPlayLink.forEach(function(item){
 	item.addEventListener("mouseenter", function(event){
