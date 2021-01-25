@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'y*)0i$mlw+^&$)lt7obt6x_1!i6!)7x=&ct7sb-k#tfu3rl4$_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = ["mydjangomusic.herokuapp.com"]
 ALLOWED_HOSTS = ["192.168.43.107", "192.168.43.248", "127.0.0.1", "mydjangomusic.herokuapp.com"]
@@ -78,24 +78,24 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "dfd482irm3en6s",
-        "USER": "wtplnxfwdofbzl",
-        "PASSWORD": "338d8adad270791d38777df7ffafdf05c17637052745474e8c23e03eb51f4cbb",
-        "HOST": "ec2-52-54-174-5.compute-1.amazonaws.com",
-        "PORT": "5432"
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# FOR HEROKU DATABASE
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "dfd482irm3en6s",
+#         "USER": "wtplnxfwdofbzl",
+#         "PASSWORD": "338d8adad270791d38777df7ffafdf05c17637052745474e8c23e03eb51f4cbb",
+#         "HOST": "ec2-52-54-174-5.compute-1.amazonaws.com",
+#         "PORT": "5432"
+#     }
+# }
 
 
 
