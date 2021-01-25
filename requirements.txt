@@ -6,3 +6,4 @@ django-crispy-forms==1.10.0
 # for Heroku
 whitenoise==5.2.0
 gunicorn==20.0.4
+psycopg2-binary==2.8.6
