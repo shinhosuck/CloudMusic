@@ -848,6 +848,7 @@ body {
     .main-container {
         justify-content: center;
         margin: 0 2rem;
+        align-items: flex-start;
     }
     .content-container {
         flex: 0 0 100%;
@@ -860,16 +861,14 @@ body {
         white-space:nowrap;
         overflow-x: auto;
         overflow-y: hidden;
-        margin-top: 3rem;
+        margin-top: 0rem;
         flex: 0 0 100%;
         margin-left: 0;
         padding-bottom: 0;
     }
     .side-window-header {
         letter-spacing: 0.1rem;
-        margin-top: 1rem;
-        padding: 0.4rem;
-        margin: 0 3rem;
+        margin: 0 3rem 1rem 3rem;
         font-size: 1.8rem;
     }
     .side-window {
