@@ -498,7 +498,7 @@ body {
 }
 /*  end of base image */
 /* footer */
-.footer {
+/*.footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -621,8 +621,8 @@ body {
     .footer-contact{
         width: 95%;
     }
-}
-/* end footer */
+}*/
+/* end footer
 /* END BASE.HTML */
 
 /* HOME.HTML */
