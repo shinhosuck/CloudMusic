@@ -1013,9 +1013,20 @@ body {
     white-space:nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.2rem;
     margin-bottom: 4rem;
 }
+.my-album-container::-webkit-scrollbar {
+   background: rgb(255, 255, 255);
+  }
+
+.my-album-container::-webkit-scrollbar-track {
+      box-shadow: inset 0px 0px 15px rgb(0, 0, 0);
+  }
+
+.my-album-container::-webkit-scrollbar-thumb {
+    background:rgb(77, 77, 77);
+  }
 .my-album-col {
     white-space: nowrap;
     display: inline-block;
