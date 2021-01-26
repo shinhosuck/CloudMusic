@@ -513,21 +513,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+   /* min-height: 100vh;*/
     align-content: flex-start;
-    /*align-items: flex-start;*/
-    padding: 1rem 0
+   /* align-items: center;*/
+    /*padding: 1rem 0*/
 }
 .footer-about-us {
     margin: 1rem;
     flex: 0 0 40%
-}
-.footer-contact{
-    margin: 1rem;
-    flex: 0 0 20%;
-}
-.footer-connect {
-    margin: 1rem;
-    flex: 0 0 20%;
 }
 .about-us {
     display: flex;
@@ -541,6 +534,10 @@ body {
 }
 .about-us-para {
     color: rgb(192, 192, 192);
+}
+.footer-contact{
+    margin: 1rem;
+    flex: 0 0 20%;
 }
 .contact-us {
     display: flex;
@@ -582,6 +579,10 @@ body {
     color:  rgb(192, 192, 192);
     font-size: 0.8rem;
     margin-left: 0.7rem;
+}
+.footer-connect {
+    margin: 1rem;
+    flex: 0 0 20%;
 }
 .link-container {
     display: flex;
