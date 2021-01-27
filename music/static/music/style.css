@@ -498,7 +498,7 @@ body {
 }
 /*  end of base image */
 /* footer */
-/*.footer {
+.footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -601,13 +601,16 @@ body {
         margin: 0;
     }
     .footer-about-us {
+        flex: 0;
         width: 50%;
     }
     .footer-connect {
         margin-top: 1rem;
+        flex: 0;
         width: 50%;
     }
     .footer-contact{
+        flex: 0;
         width: 50%;
     }
 }
@@ -621,7 +624,7 @@ body {
     .footer-contact{
         width: 95%;
     }
-}*/
+}
 /* end footer
 /* END BASE.HTML */
 
