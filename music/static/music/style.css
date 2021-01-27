@@ -501,15 +501,21 @@ body {
 .footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-   padding-top: 1rem;
-    margin: 0 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 5rem;
 }
 .footer-about-us {
-    flex: 0 0 70%;
+    flex: 0 0 30%;
     display: flex;
     flex-direction: column;
+    border: 1px solid rgb(36, 36, 36);
+    border-radius: 10px;
+    height: 222px;
+    padding: 1rem;
+    margin: 1rem;
 }
 .about-cloud-beat {
     color: rgb(0, 170, 0);
@@ -520,9 +526,14 @@ body {
     color: rgb(192, 192, 192);
 }
 .footer-contact{
-    flex: 0 0 35%;
+    flex: 0 0 30%;
     display: flex;
+    border: 1px solid rgb(36, 36, 36);
+    border-radius: 10px;
     flex-direction: column;
+    height: 222px;
+    padding: 1rem;
+    margin: 1rem;
 }
 .contact-us-title {
     color:  rgb(0, 170, 0);
@@ -561,9 +572,13 @@ body {
     margin-left: 0.7rem;
 }
 .footer-connect {
-    flex: 0 0 35%;
+    flex: 0 0 30%;
     display: flex;
+    border: 1px solid rgb(36, 36, 36);
+    border-radius: 10px;
     flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
 }
 .social-link-title {
     color: rgb(0, 170, 0);
@@ -593,36 +608,39 @@ body {
 .twitter {
     margin-left: 0.7rem;
 }
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1125px) {
     .footer {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 0;
+        justify-content: center;
     }
     .footer-about-us {
-        flex: 0;
-        width: 50%;
-    }
-    .footer-connect {
-        margin-top: 1rem;
-        flex: 0;
-        width: 50%;
+        flex: 0 0 45%;
     }
     .footer-contact{
-        flex: 0;
-        width: 50%;
+        flex: 0 0 45%;
+    }
+    .footer-connect {
+        flex: 0 0 93%;
     }
 }
-@media screen and (max-width: 450px) {
-     .footer-about-us {
-        width: 95%;
-    }
-    .footer-connect {
-        width: 95%;
+@media screen and (max-width: 850px) {
+    .footer-about-us {
+        flex: 0 0 100%;
     }
     .footer-contact{
-        width: 95%;
+        flex: 0 0 100%;
+    }
+    .footer-connect {
+        flex: 0 0 100%;
+    }
+}
+@media screen and (max-width: 455px) {
+    .footer {
+       margin: 0 1rem;
+    }
+}
+@media screen and (max-width: 355px) {
+    .footer-about-us {
+        height: 300px;
     }
 }
 /* end footer
