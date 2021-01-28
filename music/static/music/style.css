@@ -518,9 +518,10 @@ body {
     margin: 1rem;
 }
 .about-cloud-beat {
-    color: rgb(0, 170, 0);
+    color: rgb(255, 255, 255);
     text-transform: capitalize;
     padding-bottom: 0.5rem;
+    border-bottom: 1px solid green;
 }
 .about-us-para {
     color: rgb(192, 192, 192);
@@ -536,8 +537,9 @@ body {
     margin: 1rem;
 }
 .contact-us-title {
-    color:  rgb(0, 170, 0);
+    color:  rgb(255, 255, 255);
     padding-bottom: 0.5rem;
+    border-bottom: 1px solid green;
 }
 .font-awesome-email {
     color: rgb(100, 100, 100);
@@ -581,7 +583,8 @@ body {
     margin: 1rem;
 }
 .social-link-title {
-    color: rgb(0, 170, 0);
+    border-bottom: 1px solid green;
+    color: rgb(255, 255, 255);
     padding-bottom: 0.5rem;
 }
 .font-awesome-link-item {
