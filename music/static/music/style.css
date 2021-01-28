@@ -1268,6 +1268,7 @@ body {
     padding: 0.1rem 0.5rem;
     display: block;
     font-size: 0.8rem;
+    cursor: pointer;
 }
 .song-duration {
     color: white;

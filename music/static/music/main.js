@@ -49,26 +49,7 @@ containerItems.forEach(function(item){
 		}
 	})
 })
-// window.addEventListener("resize", function(){
-// 	playBtns.forEach( function(btn) {
-// 		if(window.innerWidth < 700) {
-// 			btn.classList.add("show-btn")
-// 			btn.classList.remove("hide-btn")
-// 			containerItems.forEach(function(item) {
-// 			item.removeEventListener("mouserover", this.item)
-// 			item.removeEventListener("mouseleave", this.item)
-// 		});
-// 		}
-// 		else if(window.innerWidth > 700) {
-// 			btn.classList.remove("show-btn")
-// 			btn.classList.add("hide-btn")
-// 			containerItems.forEach(function(item) {
-// 			item.removeEventListener("mouserover", this)
-// 			item.removeEventListener("mouseleave", this)
-// 		});
-// 		}
-// 	});
-// })
+
 // side window
 sideWindowPlayLink.forEach(function(item){
 	item.addEventListener("mouseenter", function(event){
@@ -169,9 +150,29 @@ maxDuration.textContent = songLength[index].textContent
 convertSongTitle.forEach(function(title){
 	maxDuration.textContent = songLength[index].textContent
 	if(convertSongTitle.indexOf(title) == index){
-		title.style.color = "white"
+		title.style.color = "rgb(255, 255, 255)"
 		title.parentElement.style.background = "rgb(81, 81, 81)"
 	}
+})
+// play song on click
+convertSongTitle.forEach(function(title){
+	title.addEventListener("click", function(){
+		song[index].pause()
+		song[index].currentTime = 0
+		index = convertSongTitle.indexOf(title)
+		song[index].play()
+		playBtn.style.display = "none"
+		pauseBtn.style.display = "block"
+		title.style.color = "rgb(255, 255, 255)"
+		title.parentElement.style.background = "rgb(81, 81, 81)"
+		maxDuration.textContent = songLength[index].textContent
+		convertSongTitle.forEach(function(title){
+			if(convertSongTitle.indexOf(title) !== index){
+				title.style.color = "rgb(255, 255, 255)"
+				title.parentElement.style.background = "rgb(41, 41, 41)"
+			}
+		})
+	})
 })
 
 // plays next song automatically and changes the song title background color
@@ -181,20 +182,22 @@ song.forEach(function(item){
 		if(event.currentTarget.paused && index > song_list_length){
 			index = 0
 			song[index].play()
+			maxDuration.textContent = songLength[index].textContent
 			maxDuration.style.display = "block"
 			initial.style.display = "block"
 		}
 		else{
 			song[index].play()
+			maxDuration.textContent = songLength[index].textContent
 		}
-		maxDuration.textContent = songLength[index].textContent
 		convertSongTitle.forEach(function(title){
-			// title.style.color = "rgb(255, 255, 255)"
-			// title.parentElement.style.background = "rgb(41, 41, 41)"
-
 		if(convertSongTitle.indexOf(title) == index){
 			title.style.color = "rgb(255, 255, 255)"
 			title.parentElement.style.background = "rgb(81, 81, 81)"
+		}
+		else{
+			title.style.color = "rgb(255, 255, 255)"
+			title.parentElement.style.background = "rgb(41, 41, 41)"
 		}
 	})
 	})
