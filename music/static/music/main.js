@@ -116,6 +116,7 @@ const playBtn = document.querySelector("#play")
 const forwardBtn = document.querySelector("#forward")
 const backBtn = document.querySelector("#back")
 const pauseBtn = document.querySelector("#pause")
+const randomBtn = document.querySelector("#random")
 
 const progressBar = document.querySelector("#progress");
 const songDuration = document.querySelectorAll(".song-duration")
