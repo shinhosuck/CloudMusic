@@ -131,6 +131,38 @@ let index = 0
 
 let song_list_length = song.length-1
 
+
+// random button
+randomBtn.addEventListener("click", function(){
+	const someNum = ranNumber()
+	if(someNum == index){
+		ranNumber()
+	}else {
+		song[index].pause()
+		index = someNum
+		song[index].currentTime = 0
+		song[index].play()
+		playBtn.style.display = "none"
+		pauseBtn.style.display = "block"
+		maxDuration.textContent = songLength[index].textContent
+		console.log(index)
+	}
+	convertSongTitle.forEach(function(title){
+			if(convertSongTitle.indexOf(title) !== index){
+				title.style.color = "rgb(255, 255, 255)"
+				title.parentElement.style.background = "rgb(41, 41, 41)"
+			}
+			else{
+				title.style.color = "rgb(255, 255, 255)"
+				title.parentElement.style.background = "rgb(81, 81, 81)"
+			}
+		})
+})
+function ranNumber(){
+	const randomNum = Math.floor(Math.random() * song.length)
+	return randomNum
+}
+
 // audio duration/length
 for(i=0; i < songLength.length; i++){
 	songDuration[i].textContent = songLength[i].textContent
