@@ -1,4 +1,4 @@
-#!/Users/anderson/Documents/GitHub/Django-Mac/Django/venv/bin/python3
+#!/home/anderson/Documents/CloudMusic/venv/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
